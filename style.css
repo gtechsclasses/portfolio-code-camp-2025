@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.navbar{
+    height: 80px;
+    width: 100%;
+    /* border: 2px solid white; */
+    background-color: rgb(39, 38, 38);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar h1{
+    font-family: cursive;
+    font-size: 50px;
+}
+
+.navbar .menu{
+    display: flex;
+    gap: 25px;
+}
+
+.navbar .menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    transition: all ease 0.3s;
+}
+
+.navbar .menu a:hover{
+    color: #a5a001;
+}
+
+.actionButton{
+    height: 50px;
+    width: 150px;
+    /* border: 2px solid teal; */
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.actionButton .circle{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #a5a001;
+    position: absolute;
+    transition: all ease 0.5s;
+}
+
+.actionButton a{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    transition: all ease 0.3s;
+}
+
+.actionButton:hover a{
+    gap: 10px;
+}
+
+.actionButton:hover .circle{
+    height: 60px;
+    width: 60px;
+}

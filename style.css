@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html,body{
@@ -11,6 +12,7 @@ html,body{
     color: white;
 }
 
+/* navbar start */
 .navbar{
     height: 80px;
     width: 100%;
@@ -80,4 +82,78 @@ html,body{
 .actionButton:hover .circle{
     height: 60px;
     width: 60px;
+}
+/* navbar end */
+
+/* hero section start */
+.hero{
+    height: calc(100vh - 80px);
+    width: 100%;
+    border: 2px solid white;
+    display: flex;
+}
+
+.hero .left{
+    height: 100%;
+    width: 50%;
+    /* background-color: #a5a001; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 50px;
+}
+
+.hero .left p{
+    font-size: 19px;
+    width: 80%;
+}
+
+.hero .left h1{
+    font-size: 65px;
+    line-height: 1.2;
+}
+
+.hero .left #heroName{
+    color: #a5a001;
+}
+
+.hero .right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.heroImg{
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 5;
+}
+
+.hero .right .heroImage{
+    height: 100%;
+}
+
+.skillsmallbox{
+    padding: 10px 20px;
+    color: black;
+    border: 1px solid white;
+    background-color: whitesmoke;
+    position: absolute;
+}
+
+.uiDesign{
+    top: 155px;
+    left: 180px;
+    z-index: 1;
+}
+
+.webDesign{
+    top: 200px;
+    right: 140px;
+    z-index: 4;
 }

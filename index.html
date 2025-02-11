@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Anish - Portfolio</title>
 </head>
-<body>
-    
 
+<body>
+
+    <!-- navbar start -->
     <div class="navbar">
         <h1>Anish</h1>
         <div class="menu">
@@ -24,9 +28,45 @@
             <a href="">Let's Talk <i class="fa-solid fa-angle-right"></i></a>
         </div>
     </div>
+    <!-- navbar end -->
+
+    <!-- Hero section start -->
+
+    <div class="hero">
+        <div class="left">
+            <p>Hey there</p>
+            <h1>I am <span id="heroName">Alexander</span> <br> a <span id="heroSkills"></span></h1>
+            <p>Design C lub is a digital agency specialized in ecommerce. We
+                build scalable, high -end web shops with composable commerce
+                architect ure.</p>
+            <div class="actionButton">
+                <div class="circle"></div>
+                <a href="">About me <i class="fa-solid fa-angle-right"></i></a>
+            </div>
+        </div>
+        <div class="right">
+            <div class="heroImg">
+                <img src="assets/main hero image.png" alt="" class="heroImage">
+            </div>
+            <div class="uiDesign skillsmallbox">ui design</div>
+            <div class="webDesign skillsmallbox">web design</div>
+        </div>
+    </div>
+
+    <!-- Hero section end -->
 
 
 
+    <!-- typed js script cdn -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
+    <script>
+        var typed = new Typed('#heroSkills', {
+            strings: ['Ui/Ux Designer', 'Frontend Developer', 'Backend Developer'],
+            typeSpeed: 50,
+            loop: true
+        });
+    </script>
 </body>
+
 </html>

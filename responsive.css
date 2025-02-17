@@ -1,0 +1,187 @@
+/* Mobile view */
+
+/* size max-width - 576px */
+
+@media (max-width: 576px) {
+
+    .navbar h1 {
+        font-size: 30px;
+    }
+
+    .navbar .menu {
+        gap: 10px;
+    }
+
+    .navbar .menu a {
+        font-size: 10px;
+    }
+
+    .actionButton {
+        height: 30px;
+        width: 100px;
+    }
+
+    .actionButton .circle {
+        height: 30px;
+        width: 30px;
+    }
+
+    .actionButton a {
+        left: 15px;
+        font-size: 10px;
+    }
+
+    .hero .left {
+        padding-left: 20px;
+    }
+
+    .hero .left h1 {
+        font-size: 30px;
+    }
+
+    .hero .left p {
+        font-size: 15px;
+    }
+
+    #heroSkills {
+        font-size: 20px;
+    }
+
+    .uiDesign {
+        top: 140px;
+    }
+
+
+    .webDesign {
+        top: 137px;
+        right: 204px;
+        z-index: 4;
+        width: fit-content;
+    }
+
+    .services {
+        height: 1200px;
+    }
+
+    .services .left {
+        width: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1px;
+    }
+
+    .section-name h3 {
+        font-size: 55px;
+        rotate: 270deg;
+        color: rgb(55, 53, 53);
+        font-family: cursive;
+    }
+
+    .service-box {
+        height: fit-content;
+        width: 350px;
+        border-radius: 30px;
+    }
+
+    .service-box h3 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .service-box p {
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    .portfolio .portfolioNav {
+        height: 50px;
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px;
+        gap: 1px;
+        flex-wrap: wrap;
+    }
+
+    .portfolio .portfolioBox {
+        width: fit-content;
+        padding: 10px 20px;
+        font-size: 10px;
+    }
+
+    .reviews {
+        width: 100%;
+        height: 500px;
+    }
+
+    .review-box {
+        height: fit-content;
+    }
+
+    .review-box .left h3 {
+        font-size: 20px;
+    }
+
+    .review-box .left p {
+        font-size: 10px;
+    }
+
+    .quote {
+        height: 20px;
+    }
+
+    .review-box .right img {
+        height: 200px;
+        border-radius: 20px;
+    }
+
+    .reviews .section-name {
+        width: 10%;
+    }
+
+    .reviews .section-name h3 {
+        font-size: 40px;
+    }
+
+    .blogs {
+        height: fit-content;
+        margin-bottom: 20px;
+    }
+
+    .foot .second,
+    .foot .third {
+        display: none;
+    }
+
+    .foot .forth {
+        width: 50%;
+        font-size: 20px;
+    }
+
+
+
+
+
+
+
+
+
+}
+
+
+/*
+
+break points
+
+1. max-width: 576px ( min-width: 0px )
+2. max-width: 768px ( min-width: 577px )
+3. max-width: 992px ( min-width: 769px )
+4. max-width: 1200px ( min-width: 993px )
+
+*/
+
+/* tablet view responsive */
+@media (min-width: 577px) and (max-width: 768px) {
+    body {
+        background-color: red;
+    }
+}

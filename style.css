@@ -1,11 +1,12 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-html,body{
+html,
+body {
     height: 100%;
     width: 100%;
     background-color: black;
@@ -13,7 +14,7 @@ html,body{
 }
 
 /* navbar start */
-.navbar{
+.navbar {
     height: 80px;
     width: 100%;
     /* border: 2px solid white; */
@@ -23,17 +24,17 @@ html,body{
     justify-content: space-around;
 }
 
-.navbar h1{
+.navbar h1 {
     font-family: cursive;
     font-size: 50px;
 }
 
-.navbar .menu{
+.navbar .menu {
     display: flex;
     gap: 25px;
 }
 
-.navbar .menu a{
+.navbar .menu a {
     color: white;
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -41,11 +42,11 @@ html,body{
     transition: all ease 0.3s;
 }
 
-.navbar .menu a:hover{
+.navbar .menu a:hover {
     color: #a5a001;
 }
 
-.actionButton{
+.actionButton {
     height: 50px;
     width: 150px;
     /* border: 2px solid teal; */
@@ -54,7 +55,7 @@ html,body{
     align-items: center;
 }
 
-.actionButton .circle{
+.actionButton .circle {
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -63,7 +64,7 @@ html,body{
     transition: all ease 0.5s;
 }
 
-.actionButton a{
+.actionButton a {
     color: white;
     font-size: 20px;
     position: absolute;
@@ -75,25 +76,26 @@ html,body{
     transition: all ease 0.3s;
 }
 
-.actionButton:hover a{
+.actionButton:hover a {
     gap: 10px;
 }
 
-.actionButton:hover .circle{
+.actionButton:hover .circle {
     height: 60px;
     width: 60px;
 }
+
 /* navbar end */
 
 /* hero section start */
-.hero{
+.hero {
     height: calc(100vh - 80px);
     width: 100%;
     /* border: 2px solid white; */
     display: flex;
 }
 
-.hero .left{
+.hero .left {
     height: 100%;
     width: 50%;
     /* background-color: #a5a001; */
@@ -104,21 +106,21 @@ html,body{
     padding-left: 50px;
 }
 
-.hero .left p{
+.hero .left p {
     font-size: 19px;
     width: 80%;
 }
 
-.hero .left h1{
+.hero .left h1 {
     font-size: 65px;
     line-height: 1.2;
 }
 
-.hero .left #heroName{
+.hero .left #heroName {
     color: #a5a001;
 }
 
-.hero .right{
+.hero .right {
     height: 100%;
     width: 50%;
     display: flex;
@@ -127,18 +129,18 @@ html,body{
     position: relative;
 }
 
-.heroImg{
+.heroImg {
     height: 100%;
     object-fit: cover;
     position: absolute;
     z-index: 5;
 }
 
-.hero .right .heroImage{
+.hero .right .heroImage {
     height: 100%;
 }
 
-.skillsmallbox{
+.skillsmallbox {
     padding: 10px 20px;
     color: black;
     border: 1px solid white;
@@ -146,21 +148,22 @@ html,body{
     position: absolute;
 }
 
-.uiDesign{
+.uiDesign {
     top: 155px;
     left: 180px;
     z-index: 1;
 }
 
-.webDesign{
+.webDesign {
     top: 200px;
     right: 140px;
     z-index: 4;
 }
+
 /* hero section end */
 
 /* logo slider section start */
-.logo-slider{
+.logo-slider {
     height: 100px;
     overflow: hidden;
     padding-top: 30px;
@@ -168,30 +171,32 @@ html,body{
     /* border: 2px solid white; */
 }
 
-.logo-slide{
+.logo-slide {
     display: inline-block;
     animation: slide 45s linear infinite;
 }
 
-.logo-slide img{
+.logo-slide img {
     height: 100%;
     margin-right: 25px;
 }
 
 @keyframes slide {
-    from{
+    from {
         transform: translateX(0);
     }
-    to{
+
+    to {
         transform: translateX(-100%);
     }
 }
+
 /* logo slider section end */
 
 
 /* services section start */
 
-.services{
+.services {
     height: 600px;
     width: 100%;
     /* border: 2px solid white; */
@@ -199,7 +204,7 @@ html,body{
     padding-top: 40px;
 }
 
-.services .left{
+.services .left {
     height: 100%;
     width: 90%;
     display: flex;
@@ -209,7 +214,7 @@ html,body{
     padding: 0px 20px;
 }
 
-.service-box{
+.service-box {
     height: 450px;
     width: 350px;
     border-radius: 30px;
@@ -221,30 +226,30 @@ html,body{
     justify-content: space-between;
 }
 
-.service-image{
+.service-image {
     height: 150px;
     width: 150px;
     overflow: hidden;
 }
 
-.service-content{
+.service-content {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.service-box h3{
+.service-box h3 {
     font-size: 35px;
     font-weight: 400;
 }
 
-.service-box p{
+.service-box p {
     font-size: 18px;
     font-weight: 400;
 }
 
 
-.services .section-name{
+.services .section-name {
     height: 100%;
     width: 15%;
     display: flex;
@@ -252,7 +257,7 @@ html,body{
     justify-content: center;
 }
 
-.section-name h3{
+.section-name h3 {
     font-size: 85px;
     rotate: 270deg;
     color: rgb(55, 53, 53);
@@ -263,20 +268,21 @@ html,body{
 
 /* portfolio section start */
 
-.portfolio{
+.portfolio {
     width: 100%;
-    border: 2px solid white;
+    /* border: 2px solid white; */
 }
 
-.portfolio .portfolioHeading{
+.portfolio .portfolioHeading {
     font-size: 45px;
     color: #a5a001;
     text-align: center;
 }
 
-.portfolio .portfolioNav{
+.portfolio .portfolioNav {
     height: 100px;
-    width: 80%;
+    /* width: 80%; */
+    width: fit-content;
     /* border: 2px solid teal; */
     margin: 0 auto;
     background-color: rgb(55, 53, 53);
@@ -290,7 +296,7 @@ html,body{
     /* overflow-x: hidden; */
 }
 
-.portfolio .portfolioBox{
+.portfolio .portfolioBox {
     /* height: 100px;
     width: 100px; */
     padding: 15px 35px;
@@ -303,51 +309,55 @@ html,body{
     cursor: pointer;
 }
 
-.portfolio .portfolioBox:hover{
+.portfolio .portfolioBox:hover {
     background-color: #a5a001;
 }
 
-.portfolio .portfolioBox.active{
+.portfolio .portfolioBox.active {
     background-color: #a5a001;
     border: none;
 }
 
-.portfolio .protfolioProjects{
-    width: 80%;
+.portfolio .protfolioProjects {
+    width: 90%;
     /* border: 2px solid salmon; */
     margin: 60px auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.portfolio .protProject{
+.portfolio .protProject {
     /* height: 500px; */
     border-radius: 20px;
+    width: fit-content;
     overflow: hidden;
     padding: 20px;
     position: relative;
     color: white;
+    /* border: 2px solid #a5a001; */
 }
 
-.portfolio .protProject .projectImg{
+.portfolio .protProject .projectImg {
     height: fit-content;
+    width: fit-content;
     overflow: hidden;
     border-radius: 20px;
     overflow: hidden;
 }
 
-.portfolio .protProject .projectImg img{
+.portfolio .protProject .projectImg img {
     height: 100%;
-    width: 100%;
     object-fit: cover;
 }
 
-.portfolio .protProject h3{
+.portfolio .protProject h3 {
     position: absolute;
-    bottom: 200px;
+    bottom: 100px;
     font-size: 45px;
     left: 60px;
 }
 
-.portfolio .protProject p{
+.portfolio .protProject p {
     position: absolute;
     bottom: 80px;
     font-size: 20px;
@@ -355,7 +365,7 @@ html,body{
     width: 80%;
 }
 
-.portfolio .protCircel{
+.portfolio .protCircel {
     height: 80px;
     width: 80px;
     background-color: rgba(225, 218, 225, 0.37);
@@ -368,14 +378,195 @@ html,body{
     justify-content: center;
 }
 
-.portfolio .protCircel i{
+.portfolio .protCircel i {
     font-size: 40px;
     rotate: -40deg;
 }
 
-
-
+.portfolioActionButton {
+    margin: 0 auto;
+}
 
 
 
 /* portfolio section end */
+
+/* review section start */
+
+
+.reviewheading {
+    height: fit-content;
+    width: fit-content;
+    font-size: 45px;
+    color: #a5a001;
+    margin: 0 auto;
+}
+
+.reviews {
+    width: 100%;
+    height: 100%;
+}
+
+.review-box {
+    height: 600px;
+    width: 85%;
+    border-radius: 30px;
+    padding: 40px 30px;
+    background-color: rgb(55, 53, 53);
+    display: flex;
+    justify-content: space-between;
+}
+
+.review-box .left {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+
+.review-box .left h3 {
+    font-size: 50px;
+}
+
+.review-box .left p {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.quote {
+    align-self: flex-end;
+}
+
+.review-box .right {}
+
+.section-name {
+    height: 100%;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* review section end */
+
+/* blog section start */
+
+.blogs {
+    height: 600px;
+    width: 100%;
+    /* border: 2px solid white; */
+    display: flex;
+    padding-top: 40px;
+}
+
+.blogs .left {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+    padding: 0px 20px;
+}
+
+.blog-box {
+    height: 450px;
+    width: 350px;
+    border-radius: 30px;
+    /* padding: 40px 30px; */
+    /* background-color: rgb(55, 53, 53); */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.blog-image {
+    height: 100%;
+    /* width: 150px; */
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.blog-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blog-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.blog-box h3 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.blog-box p {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+/* blog section end */
+
+
+
+/* footer section start */
+
+.footer {
+    width: 100%;
+    /* border: 2px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(55, 53, 53);
+    padding: 20px;
+}
+
+.foot {
+    height: 100%;
+    width: 80%;
+    /* border: 2px solid white; */
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    background-color: rgb(55, 53, 53);
+}
+
+.foot .second,
+.foot .third,
+.foot .forth {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.foot .second h3,
+.foot .third h3 {
+    font-size: 25px;
+    color: #a5a001;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.foot a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.foot a:hover,
+.foot i:hover {
+    color: #a5a001;
+    cursor: pointer;
+}
+
+/* footer section end */
